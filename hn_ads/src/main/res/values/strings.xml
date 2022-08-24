@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_price_discount"><strike>$5.99</strike></string>
+
+    <string name="txt_title_in_app">%s </string>
+</resources>

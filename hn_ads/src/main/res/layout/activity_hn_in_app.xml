@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hn_background_inapp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_hn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_hn_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="REMOVE\nADS"
+        android:textColor="@color/gnt_white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_hn_back" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/crl_bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_remove_ads2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/crl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_hn_border_top"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/img_remove_ads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:src="@drawable/ic_hn_remove_ads"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lbl_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Zip Extractor Pro"
+            android:maxLines="2"
+            android:textColor="@color/gnt_text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/lbl_restore"
+            app:layout_constraintBottom_toBottomOf="@+id/img_remove_ads"
+            app:layout_constraintStart_toEndOf="@+id/img_remove_ads"
+            app:layout_constraintTop_toTopOf="@+id/img_remove_ads" />
+
+        <TextView
+            android:id="@+id/lbl_restore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Restore"
+            android:textColor="@color/gnt_tet_action"
+            app:layout_constraintBottom_toBottomOf="@id/img_remove_ads"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_remove_ads" />
+
+        <TextView
+            android:id="@+id/lbl_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Say goodbye to all of annoying ads."
+            android:textColor="@color/gnt_text_primary"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/img_remove_ads"
+            app:layout_constraintTop_toBottomOf="@+id/img_remove_ads" />
+
+        <TextView
+            android:id="@+id/lbl_price_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/gnt_text_secondary"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/img_remove_ads"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_content" />
+
+        <TextView
+            android:id="@+id/lbl_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/space_8dp"
+            android:layout_marginEnd="16dp"
+            android:text="-"
+            android:textColor="@color/gnt_text_price"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/img_remove_ads"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_price_discount" />
+
+        <TextView
+            android:id="@+id/lbl_percent_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/hn_space_16dp"
+            android:background="@drawable/bg_hn_discount"
+            android:text="50%"
+            android:layout_marginTop="@dimen/space_4dp"
+            android:textColor="@color/gnt_white"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/lbl_price"
+            app:layout_constraintTop_toTopOf="@+id/lbl_price" />
+
+
+        <Button
+            android:id="@+id/btn_buy_now"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/hn_bg_button_inapp"
+            android:text="Buy Now"
+            android:textAllCaps="false"
+            android:textColor="@color/gnt_white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_price" />
+
+        <ProgressBar
+            android:id="@+id/prg_restore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

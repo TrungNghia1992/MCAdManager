@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <item name="hn_medium_template_bottom_weight" format="float" type="dimen">0.4</item>
+    <item name="hn_text_row_weight" format="float" type="dimen">0.25</item>
+    <item name="hn_media_view_weight" format="float" type="dimen">1.0</item>
+    <item name="hn_medium_template_top_weight" format="float" type="dimen">0.2</item>
+
+    <dimen name="hn_text_size_small">12sp</dimen>
+    <dimen name="hn_text_size_large">14sp</dimen>
+    <dimen name="hn_ad_indicator_width">25dp</dimen>
+    <dimen name="hn_ad_indicator_height">20dp</dimen>
+    <dimen name="hn_ad_indicator_bar_height">30dp</dimen>
+    <dimen name="hn_ad_indicator_top_margin">0dp</dimen>
+    <dimen name="hn_ad_indicator_bottom_margin">10dp</dimen>
+    <dimen name="hn_ad_indicator_text_size">10sp</dimen>
+
+    <dimen name="hn_small_cta_button_height">32dp</dimen>
+    <dimen name="hn_medium_cta_button_height">40dp</dimen>
+
+    <dimen name="space_2dp">2dp</dimen>
+    <dimen name="space_4dp">4dp</dimen>
+    <dimen name="space_8dp">8dp</dimen>
+    <dimen name="hn_space_12dp">12dp</dimen>
+    <dimen name="hn_space_16dp">16dp</dimen>
+
+    <dimen name="hn_medium_icon">42dp</dimen>
+    <dimen name="hn_native_ad_height">164dp</dimen>
+</resources>
